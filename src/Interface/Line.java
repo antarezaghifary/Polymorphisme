@@ -1,3 +1,5 @@
+package Interface;
+
 
 public class Line implements Relation{
     private double x1;
@@ -23,13 +25,13 @@ public class Line implements Relation{
     public boolean isLess(Object a, Object b) {
         double aLen=((Line)a).getLength();
         double bLen=((Line)b).getLength();
-        return (aLen>bLen);
+        return (aLen<bLen);
         
     }
     public boolean isEqual(Object a, Object b) {
         double aLen=((Line)a).getLength();
         double bLen=((Line)b).getLength();
-        return (aLen>bLen);
+        return (aLen==bLen);
         
     }
 }
